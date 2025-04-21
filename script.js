@@ -1,8 +1,7 @@
 class Personagem {
     constructor(nome, descricao, imagem) {
       this.nome = nome;
-      this.descricao = descricao;
-      this.pontuacao = 0;
+      this.pontuacao = 0; 
     }
   
     adicionarPonto(pontos) {
@@ -13,22 +12,25 @@ class Personagem {
   class Quiz {
     constructor() {
         this.personagens = [
-            new Personagem("Hermione Granger", "Inteligente e determinada. Ama livros e justiça."),
-            new Personagem("Harry Potter", "Corajoso, leal e sempre pronto pra lutar pelo bem."),
-            new Personagem("Draco Malfoy", "Astuto e ambicioso. Um verdadeiro sonserino."),
-            new Personagem("Ron Weasley", "Leal, engraçado e sempre ao lado dos amigos, mesmo nas horas mais difíceis.")
+            new Personagem("Guerreiro"),
+            new Personagem("Mago"),
+            new Personagem("Ladino"),
+            new Personagem("Clérigo")
           ];
           
   
           this.perguntas = [
             {
-              texto: "O que você faria em seu tempo livre em Hogwarts?",
+              texto: "Qual desses objetos mágicos você escolheria?",
               opcoes: [
-                { texto: "Ler livros na biblioteca", pontos: [3,1,2,1] },
-                { texto: "Praticar Quadribol", pontos: [1,3,2,2] },
-                { texto: "Planejar como liderar sua casa à vitória", pontos: [2,1,3,1] }
+                { texto: "Um machado flamejante", pontos: [3,1,1,2] },
+                { texto: "Um grimório antigo", pontos: [1,3,1,1] },
+                { texto: "Um anel de invisibilidade", pontos: [1,1,3,1] },
+                { texto: "Um amuleto sagrado", pontos: [2,1,1,3] }
               ]
             }
+
+            // mais 9 perguntas e blablabla
          ];
   
         } 
