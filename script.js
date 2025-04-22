@@ -105,7 +105,7 @@ function gerarQuiz(num) {
 
   const questionario = document.getElementById('questionario');
 
-  questionario.querySelector('h1').textContent = "Pergunta", num + 1;
+  questionario.querySelector('h1').textContent = "Pergunta "+ (num + 1);
   questionario.querySelector('p').textContent = perguntas[num].texto;
 
   const botoes = questionario.querySelectorAll('button');
