@@ -1,17 +1,24 @@
 class Personagem {
   constructor(nome, descricao, imagem) {
     this.nome = nome;
+    this.descricao = descricao;
+    this.imagem = imagem;
     this.pontuacao = 0;
   }
 }
 
 var personagens = [
-  new Personagem("Guerreiro"),
-  new Personagem("Mago"),
-  new Personagem("Ladino"),
-  new Personagem("Clérigo"),
-  new Personagem("Bárbaro"),
-  new Personagem("Bardo"),
+  new Personagem("Guerreiro", "Disciplina. Honra. Força. Você é um combatente nato. Enfrenta os desafios de frente e protege seus aliados com coragem. Seu espírito é forjado no campo de batalha, e sua determinação é inabalável. Onde muitos hesitam, você avança com firmeza.", "components/tung.png"),
+
+  new Personagem("Mago", "Conhecimento. Poder. Mistério.  Você é movido por curiosidade e sabedoria. O mundo é um enigma esperando para ser decifrado, e sua mente é a chave. Prefere pensar antes de agir e acredita que a magia é a verdadeira força que molda a realidade."),
+
+  new Personagem("Ladino", "Astúcia. Agilidade. Segredo.Você vive nas sombras, mas sempre à frente dos outros. Um mestre da observação e da surpresa, sabe quando agir e quando desaparecer. Para você, cada obstáculo é uma oportunidade — desde que ninguém esteja olhando."),
+
+  new Personagem("Clérigo", "Fé. Cura. Equilíbrio.Você caminha entre luz e trevas, guiado por sua crença no bem maior. Seja protegendo os fracos, curando os feridos ou enfrentando o mal com firmeza, seu papel é essencial. Você é a alma do grupo — firme, sereno e necessário."),
+
+  new Personagem("Bárbaro", "Fúria. Instinto. Liberdade.Você é a tempestade antes do silêncio. Impulsivo, poderoso e destemido, age com o coração antes da razão. Confia no próprio corpo como arma e valoriza a força pura. Ninguém te prende — você é um espírito livre."),
+
+  new Personagem("Bardo", "Carisma. Inspiração. Magia.Você é a alma vibrante da aventura. Com palavras, canções ou gestos, muda o rumo de uma batalha e aquece corações. Sabe entreter, mas também manipular — e usa isso com estilo. Onde há histórias, há um bardo."),
 ];
 
 class Pergunta {
@@ -174,4 +181,6 @@ function gerarResultado() {
   questionario.style.display = 'none';
   let youIs = personagens.reduce((max, atual) => atual.pontuacao > max.pontuacao ? atual : max);
   resultado.querySelector('h1').textContent = youIs.nome
+  resultado.querySelector('p').textContent = youIs.descricao
+  resultado.querySelector('img').src = youIs.imagem
 }

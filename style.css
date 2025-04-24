@@ -28,3 +28,10 @@ body {
     font-weight: bold;
     cursor: pointer;
   }
+
+  #resultado img {
+    width: 200px;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
