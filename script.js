@@ -24,46 +24,98 @@ class Pergunta {
 
 var perguntas = [
   new Pergunta(
-    "pergunta 1",
-    ["1a", "b", "c", "d"],
+    "Qual dessas atividades você mais gostaria de fazer?",
+    ["Lutar com honra em um torneio", "Decifrar um grimório antigo", "Explorar masmorras secretas"],
     [
-      { "Guerreiro": 3, "Bardo": 2, "Clérigo": 1 },
-      { "Bardo": 3, "Ladino": 2, "Guerreiro": 1 },
-      { "Ladino": 3, "Guerreiro": 2, "Bardo": 1 },
-      { "Guerreiro": 3, "Ladino": 2, "Bardo": 1 },
-    ],
+      { "Guerreiro": 3, "Bárbaro": 2, "Clérigo": 1 },
+      { "Mago": 3, "Clérigo": 2, "Bardo": 1 },
+      { "Ladino": 3, "Guerreiro": 2, "Mago": 1 }
+    ]
   ),
   new Pergunta(
-    "pergunta 2",
-    ["2a", "b", "c", "d"],
+    "Você encontra um obstáculo no caminho. Como resolve?",
+    ["Arrebenta tudo na força bruta", "Usa uma ilusão mágica", "Tenta desarmar silenciosamente"],
     [
-      { "Clérigo": 3, "Mago": 2, "Guerreiro": 1 },
-      { "Clérigo": 3, "Bardo": 2, "Mago": 1 },
-      { "Mago": 3, "Clérigo": 2, "Ladino": 1 },
-      { "Mago": 3, "Clérigo": 2, "Ladino": 1 },
-    ],
+      { "Bárbaro": 3, "Guerreiro": 2, "Ladino": 1 },
+      { "Mago": 3, "Bardo": 2, "Clérigo": 1 },
+      { "Ladino": 3, "Bardo": 2, "Guerreiro": 1 }
+    ]
   ),
   new Pergunta(
-    "pergunta 3",
-    ["3a", "b", "c", "d"],
+    "Em uma taverna, você prefere...",
+    ["Contar histórias e animar o lugar", "Observar quieto e ouvir conversas", "Conversar sobre batalhas e glórias"],
     [
-      { "Guerreiro": 3, "Bardo": 2, "Clérigo": 1 },
-      { "Bardo": 3, "Ladino": 2, "Guerreiro": 1 },
-      { "Ladino": 3, "Guerreiro": 2, "Bardo": 1 },
-      { "Guerreiro": 3, "Ladino": 2, "Bardo": 1 },
-    ],
+      { "Bardo": 3, "Clérigo": 2, "Mago": 1 },
+      { "Ladino": 3, "Mago": 2, "Bardo": 1 },
+      { "Guerreiro": 3, "Bárbaro": 2, "Clérigo": 1 }
+    ]
   ),
   new Pergunta(
-    "pergunta 4",
-    ["4a", "b", "c", "d"],
+    "Um inimigo aparece de surpresa. Sua reação é...",
+    ["Partir pra cima com tudo", "Atacar com magia à distância", "Esperar o momento certo pra agir"],
     [
-      { "Clérigo": 3, "Mago": 2, "Guerreiro": 1 },
-      { "Clérigo": 3, "Bardo": 2, "Mago": 1 },
-      { "Mago": 3, "Clérigo": 2, "Ladino": 1 },
-      { "Mago": 3, "Clérigo": 2, "Ladino": 1 },
-    ],
+      { "Bárbaro": 3, "Guerreiro": 2, "Ladino": 1 },
+      { "Mago": 3, "Clérigo": 2, "Bardo": 1 },
+      { "Ladino": 3, "Bardo": 2, "Mago": 1 }
+    ]
   ),
+  new Pergunta(
+    "Qual dessas qualidades te define melhor?",
+    ["Sabedoria", "Coragem", "Astúcia"],
+    [
+      { "Clérigo": 3, "Mago": 2, "Bardo": 1 },
+      { "Guerreiro": 3, "Bárbaro": 2, "Clérigo": 1 },
+      { "Ladino": 3, "Bardo": 2, "Mago": 1 }
+    ]
+  ),
+  new Pergunta(
+    "Você precisa escolher uma arma. Qual prefere?",
+    ["Espada e escudo", "Cajado arcano", "Adagas envenenadas"],
+    [
+      { "Guerreiro": 3, "Bárbaro": 2, "Ladino": 1 },
+      { "Mago": 3, "Clérigo": 2, "Bardo": 1 },
+      { "Ladino": 3, "Bardo": 2, "Guerreiro": 1 }
+    ]
+  ),
+  new Pergunta(
+    "Alguém está ferido no seu grupo. Você...",
+    ["Usa magia de cura", "Canta para levantar o moral", "Segue em frente com frieza"],
+    [
+      { "Clérigo": 3, "Mago": 2, "Bardo": 1 },
+      { "Bardo": 3, "Clérigo": 2, "Mago": 1 },
+      { "Ladino": 3, "Bárbaro": 2, "Guerreiro": 1 }
+    ]
+  ),
+  new Pergunta(
+    "Qual seu maior medo?",
+    ["Perder a razão", "Ser ignorado", "Ser traído por aliados"],
+    [
+      { "Mago": 3, "Clérigo": 2, "Bardo": 1 },
+      { "Bardo": 3, "Ladino": 2, "Clérigo": 1 },
+      { "Ladino": 3, "Guerreiro": 2, "Bárbaro": 1 }
+    ]
+  ),
+  new Pergunta(
+    "Na hora de agir, você prefere...",
+    ["Força e impulso", "Planejamento e estratégia", "Inspirar os outros com palavras"],
+    [
+      { "Bárbaro": 3, "Guerreiro": 2, "Ladino": 1 },
+      { "Mago": 3, "Clérigo": 2, "Guerreiro": 1 },
+      { "Bardo": 3, "Clérigo": 2, "Mago": 1 }
+    ]
+  ),
+  new Pergunta(
+    "Você foi chamado para uma missão. Quem quer ao seu lado?",
+    ["Um mago sábio e calmo", "Um bardo carismático", "Um guerreiro destemido"],
+    [
+      { "Mago": 3, "Clérigo": 2, "Bardo": 1 },
+      { "Bardo": 3, "Ladino": 2, "Clérigo": 1 },
+      { "Guerreiro": 3, "Bárbaro": 2, "Ladino": 1 }
+    ]
+  )
 ];
+
+
 
 function reiniciarPage() {
   const inicial = document.getElementById('tela-inicial');
